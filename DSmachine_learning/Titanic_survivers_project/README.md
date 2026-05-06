@@ -5,7 +5,7 @@
 This project predicts whether a passenger survived the Titanic disaster using machine learning algorithms. It focuses on feature engineering and improving model performance.
 
 ## Dataset
-* Source: Titanic dataset on Kaggle
+* **Source:** [Kaggle Dataset](https://www.kaggle.com/datasets/yasserh/titanic-dataset)
 
 The dataset contains passenger information such as:
 - PassengerID
@@ -14,20 +14,20 @@ The dataset contains passenger information such as:
 - Name
 - Sex
 - Age
-- Number of siblings/spouses (SibSp)
-- Number of parents/children (Parch)
+- SibSp (siblings/spouses) 
+- Parch (parents/children) 
 - Ticket
 - Fare
 
 ## Problem Statement 
 
-Predict passenger survival (0 = Did not survive, 1 = Survived).
+Predict passenger survival (0 = `Did not survive`, 1 = `Survived`).
 
 ## Tech Stack
 
 * Python
 * Pandas
-* Scikit-learn (LogisticRegression,StandardScaler,RandomForestClassifier, train_test_split, accuracy_score, classification_report, confusion_matrix)
+* Scikit-learn
 * Matplotlib
 * Seaborn
 
@@ -46,14 +46,14 @@ Created new features to improve performance:
 ## Results
 
 - Both the models acquired the same accuracy 0.81 (81%)
-
-- But they both performed slightly different from their precision, recall and f1-score results. The Logistic Regression model performed slitly better than the Random Forest Classifier
-  - The results were highly influenced by the sex feature. The sex highly determined the survival of the passengers on the titanic.
+- Both models performed slightly different from their precision, recall and f1-score results. 
+- The Logistic Regression model performed slightly better overall.
+- Model predictions were strongly influenced by the Sex feature. 
 
 ## **Insights**
-* People who did not survive are more than those that survived the disaster.
-* More female passengers likely survived than male passengers
-* People in higher class were more priotized than people in other classes
+* More people died than survived.
+* Female passengers had higher survival rates than male passengers.
+* Passengers in higher class were more likely to survive than passengers in other classes.
 
 ## How to run
 
